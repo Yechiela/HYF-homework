@@ -1,7 +1,7 @@
     <!DOCTYPE html>
 <html>
 
-<head>
+       <head>
     <meta charset="utf-8">
     <title>Yechiela Pojanamesbaanstit</title>
     <style>
@@ -249,13 +249,13 @@
 
         <section>
             <h2>A freelance video producer and videographer for news agencies <h2>
-<h3>2009-2010</h3>
-<ul>
-<li>The New York Times
-<li>The Irrawaddy Publishing Group
- </ul> </section>
+     <h3>2009-2010</h3>
+       <ul>
+      <li>The New York Times
+         <li>The Irrawaddy Publishing Group
+          </ul> </section>
 
-<section><h2>Advisors and trainer for the local government organizations</h2>
+          <section><h2>Advisors and trainer for the local government organizations</h2>
 
             <h3>2011-2012</h3>
             <p>Public lecture in the big teaching room at the office of the local administration The organization of Thailand where I have to travel to the whole country to advise how to promote their local products in each subdistrict to boost the local economy by promoting to the whole world through all media platforms.
@@ -321,6 +321,6 @@
         </section>
     </main>
 
-</body>
+    </body>
 
-</html>
+    </html>
