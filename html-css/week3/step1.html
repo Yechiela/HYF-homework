@@ -1,0 +1,201 @@
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        html,
+        body {
+            background-color: orangered;
+            margin: 10px;
+            padding: 10px;
+            align-self: auto;
+            text-align: initial;}
+            html {
+            background-color: rgb(12, 3, 0);
+            }
+
+        main{
+            padding: 10px;
+            background-color: white;
+            align-self: auto;}
+        body {
+            width: 60%;
+            margin: 20 auto;
+            }
+
+        .shipping {
+            display: inline;
+        }
+        #checkshipping:checked+.shipping {
+            display: none;
+        }
+        .textbox {
+            width: 80%;
+        }
+        label {
+            display: block;
+        
+        }
+        .row {
+            display: flex;
+        }
+        .column {
+            flex: 50%;
+            flex: 1 1 auto;
+        }
+        .small-column {
+            flex: 20%;
+        }
+        .big-column {
+            flex: 80%;
+        }
+        @media screen and (max-width: 600px) 
+        {
+            .column {
+                flex: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Yourcustomtailer.com</h1>
+    </header>
+    <nav>
+        <ul id="menu">
+            <li><a href="">Step 1</a></li>
+            <li><a href="step2.html">Step 2</a></li>
+            <li><a href="step3.html">Step 3</a></li>
+            <li><a href="step4.html">Step 4</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Sign up to yourcustomtailer.com</h2>
+        <section>
+            <p>
+                We can't wait to help you improve your life-style and gain
+                attention from people around you!
+            </p>
+            <p>
+                Sign up below to save up to 70% on apparel, hand-bags and
+                cosmetics. Our agents are busy picking the best offers that
+                match your preferences and styles. Every week we wlll send
+                you a hand-picked selection. - we just need to know a few
+                details about your first...
+            </p>
+            <h3>
+                Step 1/4 - tell us who you are?
+            </h3>
+            <progress max="5" value="1"></progress>
+            <p>
+                Nice to meet you. Let's spend a minute to get to know each
+                others? Please enter the following:
+            </p>
+            <form>
+                <div class="row">
+                    <div class="column">
+                        <label for="firstname">First name*</label>
+                        <input type="text" class="textbox" id="firstname" required />
+                    </div>
+                    <div class="column">
+                        <label for="lastname">Last name*</label>
+                        <input type="text" class="textbox" id="lastname" required />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <label for="country">Country*</label>
+                        <select id="country">
+                            <option selected>Denmark</option>
+                            <option>Norway</option>
+                            <option>Sweden</option>
+                            <option>Finland</option>
+                            <option>Germany</option>
+                            <option>France</option>
+                            <option>Italy</option>
+                            <option>Poland</option>
+                            <option>Austria</option>
+                            <option>Hungary</option>
+                            <option>Portugal</option>
+                            <option>Croatia</option>
+                            <option>Turkey</option>
+                            <option>Others</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <label for="address">Street address*</label>
+                        <input type="text" class="textbox" id="address" required />
+                    </div>
+                    <div class="column">
+                        <label for="zipcode">Post code*</label>
+                        <input type="text" id="zipcode" maxlength="4" required />
+                    </div>
+                </div>
+                <p>
+                    Use the same address for billing and shipping? Uncheck below
+                    to fill out a seperate shipping address.
+                </p>
+                <label for="checkshipping"><b>Shipping Address</b></label>
+                <input type="checkbox" id="checkshipping" checked />
+                <div class="shipping">
+                        <b>Shipping Address:</b><br>
+                        <div class="row">
+                            <div class="column">
+                                <label for="firstname_ship">First name*</label>
+                                <input type="text" class="textbox" id="firstname_ship" required />
+                            </div>
+                            <div class="column">
+                                <label for="lastname_ship">Last name*</label>
+                                <input type="text" class="textbox" id="lastname_ship" required />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <label for="country_ship">Country*</label>
+                                <select id="country_ship">
+                                    <option selected>Denmark</option>
+                                    <option>Others</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <label for="address_ship">Street address*</label>
+                                <input type="text" class="textbox" id="address_ship" required />
+                            </div>
+                            <div class="column">
+                                <label for="zipcode_ship">Post code*</label>
+                                <input type="text" id="zipcode_ship" maxlength="4" required />
+                            </div>
+                        </div>                    
+                </div>
+                    <div class="row">
+                        <div class="small-column">
+                            <b>Profiles Description</b>
+                            <br>
+                            <i>
+                                Please provide a short description of yourself to be
+                                displayed on our social community pages.
+                            </i>
+                        </div>
+                        <div class="big-column">
+                            <textarea id="profiledesc" maxlength="500"></textarea>
+                        </div>
+                    </div>
+
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <p>
+            <button id="nextstep"><a href="step2.html">Next Step</a></button>
+        </p>
+    </footer>
+</body>
