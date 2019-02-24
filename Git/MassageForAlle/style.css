@@ -1,0 +1,169 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+    display: flex;
+    /*เพื่อจัดให้เรียงออกข้าง*/
+    background-color: aquamarine;
+    padding: 10px 10px 10px 10px;
+}
+
+footer {
+    background-color: rgb(103, 101, 104);
+    color: white;
+    padding: 7px 7px 7px 7px;
+}
+
+aside {
+    background-color: lightpink;
+    padding: 7px 7px 7px 7px;
+    border: solid thin;
+    border-color: pink;
+}
+
+ul li {
+    list-style: none;
+    /*เพื่อจัดให้ไม่แสดงจุด*/
+    list-style-type: none;
+    /*เพื่อจัดให้ไม่ขึ้นบรรทัดใหม่*/
+}
+
+nav ul {
+    margin: 0;
+    /*เพื่อให้ชิดขอบ*/
+    padding: 0;
+    /*เพื่อทุกอันติดกัน*/
+    display: flex;
+    /*เพื่อจัดเรียงไปข้างๆ*/
+    width: 100%;
+    /*ขยายเต็มขนาดกล่อง*/
+    background-color: wheat;
+}
+
+nav li {
+    width: 20%;
+}
+
+nav a {
+    display: block;
+    /*ให้แสดงผลเป็นบล็อกต่อๆ กัน*/
+    font-weight: bold;
+    text-decoration: none;
+    /*ไม่แสดงเป็น link*/
+    text-align: center;
+    color: black;
+    padding-top: 10px;
+    height: 30px;
+}
+
+nav a:hover {
+    background-color: pink;
+}
+
+.flex-column {
+    display: flex;
+    /*เพื่อจัดเรียงไปข้างๆ*/
+    flex-direction: column;
+    /*เพื่อให้เรียงลำดับตามแนวตั้ง*/
+    padding: 1em 1em 1em 1em;
+}
+
+.flex-row {
+    display: flex;
+    /*เพื่อให้เรียงไปแนวข้างๆ*/
+    flex-direction: row;
+    /*เพื่อให้เรียงลำดับตามแนวนอน*/
+    flex-wrap: wrap;
+    /*เพื่อให้แสดงรายการไปจนเต็มพื้นที่*/
+    padding: 1em 1em 1em 1em;
+}
+
+.box {
+    border: solid;
+    background-color: white;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+.box-image {
+    border: solid;
+    width: 20%;
+    height: 20%;
+    flex: 1;
+    /*1 อัตราส่วนเท่าๆ กัน*/
+}
+
+.left-side {
+    flex: 80%;
+    /*กินพื้นที่ 4 ใน 5*/
+    justify-items: center;
+}
+
+.right-side {
+    flex: 20%;
+    /*กินพื้นที่ 1 ใน 5*/
+}
+
+.big {
+    flex: 1;
+    /*1 เท่า*/
+}
+
+.bigger {
+    flex: 2;
+    /*2 เท่า*/
+}
+
+.biggest {
+    flex: 3;
+    /*3 เท่า*/
+}
+
+#followus img {
+    width: 20%;
+}
+
+
+/*Information page: Responsive for mobile screens */
+
+@media (max-width: 650px) {
+    main {
+        flex-direction: column;
+        /*กลับมาแสดงผลแบบแนวตั้ง*/
+    }
+    nav ul {
+        flex-direction: column;
+        /*กลับมาแสดงผลแบบแนวตั้ง*/
+    }
+    nav li {
+        width: 100%;
+        /*ยืดขนาดให้เต็มพื้นที่*/
+    }
+    #services .flex-column {
+        flex-direction: row;
+        /*กลับมาแสดงผลแบบแนวนอน*/
+    }
+    #pictures .box-image {
+        width: 100%;
+        /*ยืดขนาดให้เต็มพื้นที่*/
+        height: 100%;
+        /*ยืดขนาดให้เต็มพื้นที่*/
+    }
+    #gallery {
+        flex: 70%;
+        /*ยืดขนาดให้เป็นอัตราส่วน 7/10*/
+    }
+    #followus {
+        flex: 30%;
+        /*ยืดขนาดให้เป็นอัตราส่วน 3/10*/
+    }
+    #followus img {
+        width: 30%;
+        /*ลดขนาดรูป*/
+    }
+    #prices {
+        flex-direction: column;
+        /*กลับมาแสดงผลแบบแนวตั้ง*/
+    }
+}
