@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        /*
+        Homework week1
+        Calculation of age in the future
+        */
+        const yearOfBirth = 1982; //my year of birth
+        const yearFuture = 2050;  //year of future age
+
+        let age = yearFuture - yearOfBirth; //calculate age
+
+        //answer result
+        let logString = "You will be " + age + " years old in " + yearFuture; //prepare text to answer        
+        //alert(logString);
+        console.log(logString);
+
+        /*
+     Homework week1
+     Calculation dog's age in the future
+     */
+        const dogYearOfBirth = 2010; //The birth year of a dog
+        const dogYearFuture = 2030; //The future age of a dog
+
+        let dogYear = dogYearFuture - dogYearOfBirth; //Calculate Age
+
+        let shouldShowResultInDogYears = true; //Set true if is for dog year and set false for human year only
+        logString = "Your dog will be " + dogYear + " human years old in " + dogYearFuture; //first is show human year
+
+        if (shouldShowResultInDogYears == true) {
+            // dogYear *= 7; 
+            dogYear = dogYear * 7;
+            logString += "\n"+"or your dog will be " + dogYear + " dog years old in " + dogYearFuture;
+        }
+        //answer result
+        //alert(logString);
+        console.log(logString);
+
+          /*
+     Homework week1
+     Calculation of a house' price
+     */
+        //Cost of both house
+        const peterHouseCost = 2500000;
+        const juliaHouseCost = 1000000;
+        const housePrice = 1000;
+        const houseRate = 2.5;
+        const gardenPrice = 300;
+        let peterHouseWidth = 8 * 10 * 10;
+        let juliaHouseWidth = 5 * 11 * 8;
+        let peterGardenWidth = 100;
+        let juliaGardenWidth = 70;
+
+        //calculate price formula= (width x height x deep) * 2.5  *1000 + garden *300
+        let peterHousePrice = peterHouseWidth * houseRate * housePrice + peterGardenWidth * gardenPrice;
+        let juliaHousePrice = juliaHouseWidth * houseRate * housePrice + juliaGardenWidth * gardenPrice;
+        //find difference between price and cost
+        let peterDiff = peterHousePrice - peterHouseCost;
+        let juliaDiff = juliaHousePrice - juliaHouseCost;
+        //answer result
+        logString = "Peter's price=" + peterHousePrice + " Cost=" + peterHouseCost + " Diff=" + peterDiff;
+        logString += "\n"+"Julia's price=" + juliaHousePrice + " Cost=" + juliaHouseCost + " Diff=" + juliaDiff;
+
+       
+        console.log(logString);
+
+     /*
+     Homework week1
+     Startup's name
+     */
+
+        //first words array for first name of the company
+        const firstWords = ["Therapist", "Massage", "Physicaltherapy", "BodyFixing", "Treatment", "Pain", "Refreshment", "Health", "Healing", "Wellness"];
+        //second words array for type of the company
+        const secondWords = ["ForAlle", "Delivery", "ToGo", "Services", "Retreat", "Pain", "Management", "AndSpa", "Killer", "Therapy"];
+        //find random value with in total of records in array
+        let randomFirst = Math.floor(Math.random() * firstWords.length);
+        let randomSecond = Math.floor(Math.random() * secondWords.length);
+        //create company name
+        let startupName = firstWords[randomFirst] + " " + secondWords[randomSecond];
+        //answer result
+        logString = 'The Startup: ' + startupName;
+        //alert(logString);
+        console.log(logString);
+
+    </script>
+</head>
+
+<body>
+    smartease.io
+</body>
+
+</html>
